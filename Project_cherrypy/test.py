@@ -8,7 +8,7 @@ from mysql.connector import errorcode
 import mysql.connector
 
 
-connect = mysql.connector.connect(user="adminC41VckI", password = "jmL6CRYHJqfR")
+connect = mysql.connector.connect(user="adminC41VckI", password = "jmL6CRYHJqfR",host="mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/",database="project")
 cursor = connect.cursor()
 DB_NAME = "project"
 def create_database(cursor):
