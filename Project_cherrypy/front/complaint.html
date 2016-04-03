@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Complaint form</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative-form.css" type="text/css">
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:1350px;'><div id='gmap_canvas' style='height:440px;width:1400px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://www.proxysitereviews.com/">proxies</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(28.5452912,77.19232360000001),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.5452912,77.19232360000001)});infowindow = new google.maps.InfoWindow({content:'<strong>IIT Delhi</strong><br>iit DELHI<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1><font color="215e38">Complaint Form</font></h1>
+                <hr>
+					<form action="submit" method="get">
+					  <fieldset class="form-group">
+					    <label for="exampleInputEmail1">Name</label>
+					    <input type="name" class="form-control" id="exampleInputName1" placeholder="Name" name="name">
+					  </fieldset>
+					  <fieldset class="form-group">
+					    <label for="exampleInputPassword1">Email Address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Id" name="email">
+					  </fieldset>
+					  <fieldset class="form-group">
+					    <label for="exampleSelect1">Concerned department (optional)</label>
+					    <select class="form-control" id="exampleSelect1" name="department">
+					      <option>1</option>
+					      <option>2</option>
+					      <option>3</option>
+					      <option>4</option>
+					      <option>5</option>
+					    </select>
+					  </fieldset>
+					  <fieldset class="form-group">
+					    <label for="exampleTextarea">Describe your grievance</label>
+					    <textarea class="form-control" id="exampleTextarea" rows="3" name="grievance"></textarea>
+					  </fieldset>
+					  <fieldset class="form-group">
+					    <input type="file" class="form-control-file" id="exampleInputFile">
+					  </fieldset>
+					    <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
