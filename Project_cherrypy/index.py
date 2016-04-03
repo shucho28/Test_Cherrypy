@@ -8,7 +8,7 @@ from mysql.connector import errorcode
 import mysql.connector
 
 
-connect = mysql.connector.connect(user="Shubham", password = "shubdumysql")
+connect = mysql.connector.connect(user="Shubham", password = "")
 cursor = connect.cursor()
 DB_NAME = "data"
 def create_database(cursor):
