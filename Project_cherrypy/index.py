@@ -8,9 +8,9 @@ from mysql.connector import errorcode
 import mysql.connector
 
 
-connect = mysql.connector.connect(user="Shubham", password = "")
+connect = mysql.connector.connect(user="adminC41VckI", password = "jmL6CRYHJqfR",database="project")
 cursor = connect.cursor()
-DB_NAME = "data"
+DB_NAME = "project"
 def create_database(cursor):
     try:
         cursor.execute(
@@ -77,8 +77,8 @@ if __name__ == '__main__':
                             'tools.staticfile.filename':'logo.ico'
                             }
     }
-    """print(os.path.abspath(__file__))
-    cherrypy.config.update({'server.socket_host':'10.206.160.183',
+    print(os.path.abspath(__file__))
+    """cherrypy.config.update({'server.socket_host':'10.206.160.183',
                             'server.socket_port':3128
                             }
                             )"""
