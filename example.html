@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ingeniors Test Site- mark1</title>
+		<meta name="description" content="Mark-1"/>
+		<meta name="author" content="Viplove Chaudhary"/>
+		
+		<!-- insert CSS link here -->
+		<link rel="stylesheet" href="./example files/style.css" type="text/css">
+		<!-- insert jScript here-->
+		<script type="text/javascript">
+			function window_onload() {
+				window.addEventListener("scroll",navbar_reset_top,false);
+			}
+
+			var navbar_top=531;
+
+			function navbar_reset_top() {
+				var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+				if(scrollTop>navbar_top&&navbar.className==="main_links-normal") {
+					document.getElementById("navbar").className="main_links-fixed";
+				}
+				else if(scrollTop<navbar_top&&navbar.className==="main_links-fixed") {
+					document.getElementById("navbar").className="main_links-normal";
+				}
+			}
+			
+			function Lodge(){
+				window.location="./example files/complaint.html";
+			}
+			
+			function Track(){
+				window.location="./example files/track.html";
+			}
+			
+			function whale_whale(){
+				window.location="./example files/whale.html";
+			}
+		</script>
+	</head>
+	<body onload="javascript:window_onload()">
+		<div class="top_bar">
+			<img class="logo" src="./example files/logo.png">
+			<img class="logo2" src="./example files/iitdelhi_logo.jpg">
+			<div id="menu" class="dropdown">
+				<span class="listfont">MENU</span>
+				<div class="listfont2">
+					<input type="button" name="menubtn" id="x" class="item" value="Whale" onclick="javascript:whale_whale()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="Whale" onclick="javascript:whale_whale()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="Whale, onclick="javascript:whale_whale()""/>
+					<input type="button" name="menubtn" id="x" class="item" value="Look what" onclick="javascript:whale_whale()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="The Cat" onclick="javascript:whale_whale()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="Dragged In" onclick="javascript:whale_whale()"/>
+				</div>
+			</div>
+		</div>
+		<div class="intro">
+			<img class="Cool_IITD_pic" src="./example files/IIT-Delhi.jpg">
+			<p>IIT Delhi Grievance Redressal Portal</p>
+		</div>
+		<!--<div class="line" style="top:531px;"></div>-->
+		<div class="main_links-normal" id="navbar">
+			<input id="lodge" type="button" name="menu2" value="Lodge a Complaint" title="Lodge a Complaint" onclick="javascript:Lodge()"/>
+			<!--<div id="lodge">
+				
+				<a href="./example files/complaint.html">Lodge A Complaint</a>
+			</div>
+			<div id="track">
+				<a href="./example files/track.html">Track Complaint Status</a>
+			</div>-->
+			<input id="track" type="button" name="menu2" value="Track Complaint" title="Track your complaint status" onclick="javascript:Track()"/>
+		</div>
+		<div class="easy-peasy">
+			<h1>Complain in 3 Easy Steps</h1>
+			<div class="line1"/>
+			<div id="steps_1"><h1>Step 1 . . . . . . . . Step 2 . . . . . . . . Step 3</p></div>
+			
+			<div class="line2"/>
+		</div>
+		<div id="info">
+			<div class="about">
+				<h3>who we are</h3>
+				<br><br><br>
+				<p>I am Jack's complete lack of surprise.</p>
+			</div>
+			<div class="about" style="position:relative;top:-168px;left:900px;">
+				<h3>objective</h3>
+				<br><br><br>
+				<p> World Domination! XD</p>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="./example files/contact.html">Contact Us</a>
+		</div>
+		
+	</body>
+</html>
